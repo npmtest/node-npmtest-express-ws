@@ -1,1 +1,40 @@
-{     "devDependencies": {         "express-ws": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-express-ws",     "homepage": "https://github.com/npmtest/node-npmtest-express-ws",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-express-ws.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### test coverage for  [express-ws (v3.0.0)](https://github.com/HenningM/express-ws)  [![npm package](https://img.shields.io/npm/v/npmtest-express-ws.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-express-ws) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-express-ws.svg)](https://travis-ci.org/npmtest/node-npmtest-express-ws)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "express-ws": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-express-ws",
+    "keywords": [
+        "coverage",
+        "test",
+        "express-ws"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_express_ws.js",
+    "name": "npmtest-express-ws",
+    "nameAlias": "npmtest_express_ws",
+    "nameOriginal": "npmtest-express-ws",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-express-ws.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}

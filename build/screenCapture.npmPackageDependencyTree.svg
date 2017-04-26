@@ -6,7 +6,7 @@
 <tspan x="10" y="58">node_modules</tspan>
 <tspan x="10" y="74">├── UNMET PEER DEPENDENCY express@^4.0.0 || ^5.0.0-alpha.1</tspan>
 <tspan x="10" y="90">└─┬ express-ws@3.0.0 </tspan>
-<tspan x="10" y="106">  └─┬ ws@2.2.3 </tspan>
+<tspan x="10" y="106">  └─┬ ws@2.3.1 </tspan>
 <tspan x="10" y="122">    ├── safe-buffer@5.0.1 </tspan>
 <tspan x="10" y="138">    └── ultron@1.1.0</tspan>
 </text>

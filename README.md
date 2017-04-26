@@ -1,6 +1,6 @@
 # npmtest-express-ws
 
-#### test coverage for  [express-ws (v3.0.0)](https://github.com/HenningM/express-ws)  [![npm package](https://img.shields.io/npm/v/npmtest-express-ws.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-express-ws) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-express-ws.svg)](https://travis-ci.org/npmtest/node-npmtest-express-ws)
+#### basic test coverage for  [express-ws (v3.0.0)](https://github.com/HenningM/express-ws)  [![npm package](https://img.shields.io/npm/v/npmtest-express-ws.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-express-ws) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-express-ws.svg)](https://travis-ci.org/npmtest/node-npmtest-express-ws)
 
 #### WebSocket endpoints for Express applications
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-express-ws/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-express-ws/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-express-ws/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-express-ws/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-express-ws/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-express-ws/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-express-ws/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-express-ws/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-express-ws/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-express-ws/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-express-ws/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-express-ws/build/coverage.html/index.html)
 
@@ -111,7 +111,8 @@
         "lint": "eslint src/",
         "prepublish": "npm run build"
     },
-    "version": "3.0.0"
+    "version": "3.0.0",
+    "bin": {}
 }
 ```
 
